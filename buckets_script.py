@@ -4,7 +4,8 @@ from iso3166 import countries
 import subprocess
 
 obj = Tranco(cache=False, cache_dir='.tranco')
-latest_date = date.today().strftime("%Y-%m-%d")
+#latest_date = date.today().strftime("%Y-%m-%d")
+latest_date = '2021-04-07'
 latest_list = obj.list(date=latest_date).top(100)
 dns_server = '@8.8.8.8' # using google's public DNS, inconsistent results using NS's from /etc/resolv.f
 storage = {
@@ -14,6 +15,8 @@ storage = {
         }
 countries_or_tlds = {}
 weird = []
+
+#latest_list.append('fail03.dnssec.works')
 
 for current_domain in latest_list:
     results_for_domain = subprocess.run(["delv", dns_server, "+vtrace", "+multiline", current_domain], capture_output=True)
@@ -25,7 +28,7 @@ for current_domain in latest_list:
         storage['fully_validated'].append(current_domain)
     elif 'unsigned answer' in out:
         storage['partially_validated'].append(current_domain)
-    elif 'SERVFAIL' in out or 'SERVFAIL' in err:
+    elif 'SERVFAIL' in out or 'SERVFAIL' in err or 'resolution failed' in out or 'resolution failed' in err:
         storage['not_supported'].append(current_domain)
     else:
         weird.append({  "domain": current_domain,
