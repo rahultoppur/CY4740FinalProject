@@ -1,0 +1,159 @@
+Metadata-Version: 1.1
+Name: whois
+Version: 0.9.8
+Summary: Python package for retrieving WHOIS information of domains.
+Home-page: https://github.com/DannyCork/python-whois/
+Author: DannyCork
+Author-email: ddarko@ddarko.org
+License: MIT http://www.opensource.org/licenses/mit-license.php
+Download-URL: https://github.com/DannyCork/python-whois/releases/tag/0.8
+Description: whois
+        =====
+        A Python package for retrieving WHOIS information of domains.
+        
+        Features
+        =============
+         * Python wrapper for Linux "whois" command
+         * Simple interface to access parsed WHOIS data for a given domain
+         * Able to extract data for all the popular TLDs (com, org, net, biz, info, pl, jp, uk, nz,  ...)
+         * Query a WHOIS server directly instead of going through an intermediate web service like many others do
+         * Works with Python 2.4+ and Python 3.x
+         * All dates as datetime objects
+         * Possibility to cache results
+        
+        Help Wanted
+        ===========
+        You contributions are welcome , look for the Help wanted tag https://github.com/DannyCork/python-whois/labels/help%20wanted
+        
+        Usage example
+        =============
+        
+        Install `whois` package from your distribution (e.g apt install whois)
+        
+        $pip install whois
+        
+        >>> import whois
+        >>> domain = whois.query('google.com')
+        
+        >>> print(domain.__dict__)
+        {
+        	'expiration_date': datetime.datetime(2020, 9, 14, 0, 0),
+        	'last_updated': datetime.datetime(2011, 7, 20, 0, 0),
+        	'registrar': 'MARKMONITOR INC.',
+        	'name': 'google.com',
+        	'creation_date': datetime.datetime(1997, 9, 15, 0, 0)
+        }
+        
+        >>> print(domain.name)
+        google.com
+        
+        >>> print(domain.expiration_date)
+        2020-09-14 00:00:00
+        
+        
+        ccTLD & TLD support
+        ===================
+        ccTLD
+        - uz
+        - ac.uk
+        - ar
+        - at
+        - be
+        - br
+        - ca
+        - co
+        - co.jp
+        - com.au
+        - cl
+        - cn
+        - cz
+        - de
+        - eu
+        - fr
+        - it
+        - ir
+        - jp
+        - kr
+        - lv
+        - lt
+        - mx
+        - nz
+        - pl
+        - ru
+        - uk
+        - us
+        - mx
+        - br
+        - sh
+        - id
+        - tv
+        - cc
+        - nyc
+        - pw
+        - рф (xn--p1ai)
+        - in
+        - ua
+        - co.za
+        - by
+        
+        
+        TLD
+        - download
+        - biz
+        - edu
+        - education
+        - com
+        - download
+        - info
+        - me
+        - mobi
+        - name
+        - net
+        - ninja
+        - nyc
+        - online
+        - org
+        - io
+        - xyz
+        - tel
+        - online
+        - wiki
+        - press
+        - pharmacy
+        - rest
+        - security
+        - site
+        - space
+        - store
+        - tech
+        - tel
+        - theatre
+        - tickets
+        - video
+        - website
+        - club
+        - work
+        - bank
+        - ca
+        - mu
+        - rw
+        
+        Issues
+        =============
+        Raise an issue https://github.com/DannyCork/python-whois/issues/new
+        
+        
+        Support
+        =======
+        Python 3.x supported. Should work on Python 2.x but not supported.
+        
+Keywords: Python,whois,tld,domain,expiration,cctld,domainer,.com,registrar
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
