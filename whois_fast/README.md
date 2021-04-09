@@ -12,5 +12,9 @@ In our script, we spawn `N` threads (identical to however many files we end up c
 
 A similar idea can be applied when performing our `delv` queries as well.  
 
+## To Run:
+* Source the virtual environment: `source whois_fast/bin/activate`
+* Run the script: `python3 whois_fast.py`
+
 ## Notes
 Note that we need a small sleep (around `0.5` seconds) to "space-out" our queries to the `whois` database. Using the `whois` PyPi module is much quicker than subprocesses, since it uses sockets directly and avoid the associated overhead.
