@@ -7,7 +7,7 @@ import time
 
 logging.basicConfig(level=logging.DEBUG)
 
-NUM_THREADS = 2 # use argparse here later...
+NUM_THREADS = 12 # use argparse here later...
 
 # Perform a whois query to get the country for a domain
 def issue_whois(domain):
@@ -15,15 +15,18 @@ def issue_whois(domain):
         query = whois.query(domain)
     except Exception as e:
         #logging.error(e) # need to log this
-        return f"{domain},None"
+        return f"{domain},Not found"
 
     # Search for the country in the query response
-    if query.registrant_country:
-        logging.debug(f"{domain},{query.registrant_country}")
-        return f"{domain},{query.registrant_country}"
-    else:
-        logging.debug(f"{domain},None")
-        return f"{domain},None"
+    try: 
+        if query.registrant_country:
+            logging.debug(f"{domain},{query.registrant_country}")
+            return f"{domain},{query.registrant_country}"
+        else:
+            return f"{domain},Not found"
+    except:
+        logging.debug(f"{domain},Not found")
+        return f"{domain},Not found"
         #return domain + ',' + re.findall(r'\bAdmin Country:\s+\w+|\bRegistrant Country:\s+\w+', query.text)[0].split(':')[-1]
 
 # Get the domains from the given input file 
@@ -46,7 +49,7 @@ def write_output(filename):
 if __name__ == '__main__':
     threads = []
     for i in range(NUM_THREADS):
-        t = threading.Thread(target=write_output, args=(i,))
+        t = threading.Thread(target=write_output, args=(f"{i:02}",))
         threads.append(t)
 
     # Start each thread
