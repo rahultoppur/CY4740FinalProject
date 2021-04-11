@@ -4,7 +4,7 @@ A faster version than a linear implementation of `whois`.
 
 ## Main Idea
 We first split up `top-1m.csv` the following way:
-`split -l 1000 top-1m.csv -d -a 1 ''`
+`split -l 10000 top-1m.csv -d -a 2 ''`
 
 This will create files named `0`, `1`, `2`, ... each with 1000 lines of `top-1m.csv`. The intuition here is that each filename corresponds to a thread ID we spawn in our program.
 
