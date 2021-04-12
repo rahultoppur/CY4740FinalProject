@@ -10,6 +10,8 @@ This will create files named `0`, `1`, `2`, ... each with 1000 lines of `top-1m.
 
 In our script, we spawn `N` threads (identical to however many files we end up creating). The idea is that every thread will be responsible for reading input in from one file (say `0`), performing the `whois` query, and writing the responses (the countries for each domain) to `0-output`. 
 
+The script assumes each input file is stored in a directory `input`. You also need to create a directory `output` where each output file will be written to. 
+
 A similar idea can be applied when performing our `delv` queries as well.  
 
 ## To Run:
