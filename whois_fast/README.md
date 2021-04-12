@@ -8,7 +8,7 @@ We first split up `top-1m.csv` the following way:
 
 This will create files named `00`, `01`, `02`, ... each with 10000 lines of `top-1m.csv`. The intuition here is that each filename corresponds to a thread ID we spawn in our program.
 
-In our script, we spawn `N` threads (identical to however many files we end up creating). The idea is that every thread will be responsible for reading input in from one file (say `0`), performing the `whois` query, and writing the responses (the countries for each domain) to `0-output`. 
+In our script, we spawn `N` threads (identical to however many files we end up creating). The idea is that every thread will be responsible for reading input in from one file (say `00`), performing the `whois` query, and writing the responses (the countries for each domain) to `00-output`. 
 
 The script assumes each input file is stored in a directory `input`. You also need to create a directory `output` where each output file will be written to. 
 
