@@ -11,10 +11,16 @@ lock = threading.Lock()
 latest_date = '2021-04-07'
 latest_list = obj.list(date=latest_date).top(num_entries)
 latest_list_pieces = []
-#split list into chunks
+#split list into chunks, write to input files
+count = 0
 for i in range (0, len(latest_list), num_entries_per_piece):
-    latest_list_pieces.append(latest_list[i:i+num_entries_per_piece])
-# testing with 20 lists of 5 entries each
+    chunk = latest_list[i:i+num_entries_per_piece]
+    infile = open(f"./input/{count}", "w")
+    for entry in chunk:
+        infile.write(entry + "\n")
+    infile.close()
+    count += 1
+
 dns_server = '@8.8.8.8' # using google's public DNS, inconsistent results using NS's from /etc/resolv.f
 storage = {
             "fully_validated": [],
@@ -24,41 +30,34 @@ storage = {
 countries_or_tlds = {}
 weird = []
 
+def write_output(output: str, t_num: int):
+    outfile = open(f"./output/{t_num}", "a")
+    outfile.write(output)
+    outfile.close()
+
 #latest_list.append('fail03.dnssec.works')
-def put_into_buckets(latest_list_piece: list):
-    
-    for current_domain in latest_list_piece:
-        results_for_domain = subprocess.run(["delv", dns_server, "+vtrace", "+multiline", current_domain], capture_output=True)
-        #print(results_for_domain.stderr.decode())
+def put_into_buckets(t_num: int):
+    infile = open(f"./input/{t_num}","r")
+    list_of_domains = infile.readlines()
+    infile.close()
+    for current_domain in list_of_domains:
+        results_for_domain = subprocess.run(["delv", dns_server, "+vtrace", "+multiline", current_domain.strip()], capture_output=True)
         err = results_for_domain.stderr.decode()
         out = results_for_domain.stdout.decode()
+        score = "-2"
         if 'fully validated' in out:
-            storage['fully_validated'].append(current_domain)
+            score = "1"
         elif 'unsigned answer' in out:
-            storage['partially_validated'].append(current_domain)
+            score = "0"
         elif 'SERVFAIL' in out or 'SERVFAIL' in err or 'resolution failed' in out or 'resolution failed' in err:
-            storage['not_supported'].append(current_domain)
-        else:
-            weird.append({  "domain": current_domain,
-                            "out": out,
-                            "debug_info": err})
-        domain_split = current_domain.split('.')
-        last_index = len(domain_split) - 1
-        tld = domain_split[last_index]
-        try:
-            tld = countries.get(tld).name
-        except KeyError:
-            dummy = False
-        if tld in countries_or_tlds:
-            countries_or_tlds[tld] += 1
-        else:
-            countries_or_tlds[tld] = 1
+            score = "-1"
+        write_output(score + " " + current_domain, t_num)
 
 # needs to adjust for accuracy, first filter out generic TLDS then try country codes
 
 threads = []
-for i in range(len(latest_list_pieces)):
-    t = threading.Thread(target=put_into_buckets, args=[latest_list_pieces[i]])
+for i in range(count):
+    t = threading.Thread(target=put_into_buckets, args=[i])
     threads.append(t)
 
 for t in threads:
@@ -66,7 +65,3 @@ for t in threads:
 
 for t in threads:
     t.join()
-
-print(storage)
-print(weird)
-print(countries_or_tlds)
