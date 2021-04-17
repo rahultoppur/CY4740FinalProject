@@ -15,7 +15,7 @@ latest_list_pieces = []
 count = 0
 for i in range (0, len(latest_list), num_entries_per_piece):
     chunk = latest_list[i:i+num_entries_per_piece]
-    infile = open(f"./input/{count}", "w")
+    infile = open(f"./input/{count:02}", "w")
     for entry in chunk:
         infile.write(entry + "\n")
     infile.close()
@@ -51,13 +51,13 @@ def put_into_buckets(t_num: int):
             score = "0"
         elif 'SERVFAIL' in out or 'SERVFAIL' in err or 'resolution failed' in out or 'resolution failed' in err:
             score = "-1"
-        write_output(score + " " + current_domain, t_num)
+        write_output(current_domain.strip() + "," + score + "\n", t_num)
 
 # needs to adjust for accuracy, first filter out generic TLDS then try country codes
 
 threads = []
 for i in range(count):
-    t = threading.Thread(target=put_into_buckets, args=[i])
+    t = threading.Thread(target=put_into_buckets, args=[f"{i:02}"])
     threads.append(t)
 
 for t in threads:
