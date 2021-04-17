@@ -4,8 +4,8 @@ from iso3166 import countries
 import subprocess, threading, sys
 
 obj = Tranco(cache=False, cache_dir='.tranco')
-num_entries_per_piece = 20
 num_entries = int(sys.argv[1])
+num_entries_per_piece = int(sys.argv[2])
 lock = threading.Lock()
 #latest_date = date.today().strftime("%Y-%m-%d")
 latest_date = '2021-04-07'
