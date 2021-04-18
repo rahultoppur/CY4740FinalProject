@@ -42,7 +42,7 @@ def write_output(filename):
     with open(f"./output/{filename}-output", 'w') as fd:
         domains = read_input(filename)
         for d in domains:
-            time.sleep(0.5)
+            time.sleep(1)
             fd.write(f"{issue_whois(d)}\n")
 
 
