@@ -45,12 +45,15 @@
 - sometimes you just get a whois error i.e. "whois: whois.primalstore.com: nodename nor servname provided, or not known: Invalid argument"
 - getting whois results takes forever and we would need a way of putting timeouts on each query
 - not all generic TLDs are guaranteed to give country info in whois:
-
+  - 
 
 # whois Takeaways
 - country codes should work for most whois results but we will likely need to create a list of country result exceptions and manually map each exception to the correct country code and then systematically update the dataframe for each exception
 - we need to implement whois query timeouts to speed up the process
-- we may need to use multithreading
+- we need to use multithreading
+- we should retry errored sites at the end just to give a second chance
+- cooloff period, too many queries
+- grep for just country
 
 # Sources
 - TLD types pulled from [wikipedia](https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#Types)
