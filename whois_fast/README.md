@@ -4,11 +4,13 @@ A faster version than a linear implementation of `whois`.
 
 ## Main Idea
 We first split up `top-1m.csv` the following way:
-`split -l 1000 top-1m.csv -d -a 1 ''`
+`split -l 10000 top-1m.csv -d -a 2 ''`
 
-This will create files named `0`, `1`, `2`, ... each with 1000 lines of `top-1m.csv`. The intuition here is that each filename corresponds to a thread ID we spawn in our program.
+This will create files named `00`, `01`, `02`, ... each with 10000 lines of `top-1m.csv`. The intuition here is that each filename corresponds to a thread ID we spawn in our program.
 
-In our script, we spawn `N` threads (identical to however many files we end up creating). The idea is that every thread will be responsible for reading input in from one file (say `0`), performing the `whois` query, and writing the responses (the countries for each domain) to `0-output`. 
+In our script, we spawn `N` threads (identical to however many files we end up creating). The idea is that every thread will be responsible for reading input in from one file (say `00`), performing the `whois` query, and writing the responses (the countries for each domain) to `00-output`. 
+
+The script assumes each input file is stored in a directory `input`. You also need to create a directory `output` where each output file will be written to. 
 
 A similar idea can be applied when performing our `delv` queries as well.  
 
