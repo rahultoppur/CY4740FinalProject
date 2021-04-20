@@ -1,23 +1,27 @@
-from tranco import Tranco
-from datetime import date
-from iso3166 import countries
-import subprocess, threading, sys
-
-obj = Tranco(cache=False, cache_dir='.tranco')
-num_entries = int(sys.argv[1])
-num_entries_per_piece = int(sys.argv[2])
+#from tranco import Tranco
+#from datetime import date
+#from iso3166 import countries
+import subprocess, threading, sys, csv
+from subprocess import Popen, PIPE
+#obj = Tranco(cache=False, cache_dir='.tranco')
+num_entries = 10#int(sys.argv[1])
+num_entries_per_piece = 33333#int(sys.argv[2])
 lock = threading.Lock()
 #latest_date = date.today().strftime("%Y-%m-%d")
-latest_date = '2021-04-07'
-latest_list = obj.list(date=latest_date).top(num_entries)
+#latest_date = '2021-04-07'
+#latest_list = obj.list(date=latest_date).top(num_entries)
 latest_list_pieces = []
 #split list into chunks, write to input files
+#FIXME: CHANGE THE FILE INPUT HERE
+data = open('../TRANCO_1M_MASTER.csv', 'r')
+latest_list = list(csv.reader(data))
+
 count = 0
 for i in range (0, len(latest_list), num_entries_per_piece):
     chunk = latest_list[i:i+num_entries_per_piece]
     infile = open(f"./input/{count:02}", "w")
     for entry in chunk:
-        infile.write(entry + "\n")
+        infile.write(str(entry) + "\n")
     infile.close()
     count += 1
 
@@ -41,17 +45,19 @@ def put_into_buckets(t_num: int):
     list_of_domains = infile.readlines()
     infile.close()
     for current_domain in list_of_domains:
-        results_for_domain = subprocess.run(["delv", dns_server, "+vtrace", "+multiline", current_domain.strip()], capture_output=True)
-        err = results_for_domain.stderr.decode()
-        out = results_for_domain.stdout.decode()
+        domain = current_domain[1:-2].replace("\'", "").replace(" ", "").split(',')
+        results_for_domain = subprocess.Popen(["delv", dns_server, "+vtrace", "+multiline", domain[1]], stdout=PIPE, stderr=PIPE)
+        out, err = results_for_domain.communicate()
+        err = err.decode()
+        out = out.decode()
         score = "-2"
         if 'fully validated' in out:
             score = "1"
         elif 'unsigned answer' in out:
             score = "0"
-        elif 'SERVFAIL' in out or 'SERVFAIL' in err or 'resolution failed' in out or 'resolution failed' in err:
+        elif 'SERVFAIL' in out or 'resolution failed' in out:
             score = "-1"
-        write_output(current_domain.strip() + "," + score + "\n", t_num)
+        write_output(domain[0] + "," + domain[1] + "," + score + "\n", t_num)
 
 # needs to adjust for accuracy, first filter out generic TLDS then try country codes
 
