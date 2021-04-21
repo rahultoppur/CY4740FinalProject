@@ -13,7 +13,7 @@ lock = threading.Lock()
 latest_list_pieces = []
 #split list into chunks, write to input files
 #FIXME: CHANGE THE FILE INPUT HERE
-data = open('../TRANCO_1M_MASTER.csv', 'r')
+data = open('../tranco_maggie.csv', 'r')
 latest_list = list(csv.reader(data))
 
 count = 0
@@ -65,8 +65,6 @@ threads = []
 for i in range(count):
     t = threading.Thread(target=put_into_buckets, args=[f"{i:02}"])
     threads.append(t)
-
-for t in threads:
     t.start()
 
 for t in threads:
