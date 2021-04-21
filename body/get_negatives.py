@@ -1,6 +1,5 @@
 import csv
 
-
 outfile = open("negatives.csv", "w")
 
 for i in range(11):
