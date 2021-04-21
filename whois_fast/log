@@ -1,5 +1,0 @@
-nohup: ignoring input
-Traceback (most recent call last):
-  File "whois_fast.py", line 3, in <module>
-    import whois
-ModuleNotFoundError: No module named 'whois'
