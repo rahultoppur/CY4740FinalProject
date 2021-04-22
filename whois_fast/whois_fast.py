@@ -7,7 +7,7 @@ import time
 
 logging.basicConfig(level=logging.DEBUG)
 
-NUM_THREADS = 12 # use argparse here later...
+NUM_THREADS = 4 # use argparse here later...
 
 # Perform a whois query to get the country for a domain
 def issue_whois(domain):
