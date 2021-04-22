@@ -1,52 +1,52 @@
 Law And Government
- Rank 	Website 	Category 	Change 	Avg. Visit Duration 	Pages / Visit 	Bounce Rate 
-1	irs.gov website analytics irs.gov 	Law and Government > Government	+1	00:04:15	5.11	30.39%
-2	service.gov.uk website analytics service.gov.uk 	Law and Government > Government	-1	00:05:46	8.43	33.99%
-3	ca.gov website analytics ca.gov 	Law and Government > Government	=	00:05:53	7.62	34.41%
-4	gosuslugi.ru website analytics gosuslugi.ru 	Law and Government > Government	=	00:06:00	9.55	13.45%
-5	gov.uk website analytics gov.uk 	Law and Government > Government	=	00:02:55	2.33	58.17%
-6	turkiye.gov.tr website analytics turkiye.gov.tr 	Law and Government > Government	=	00:04:40	7.13	30.07%
-7	ny.gov website analytics ny.gov 	Law and Government > Government	+1	00:04:37	7.84	42.32%
-8	census.gov.uk website analytics census.gov.uk 	Law and Government > Government	new	00:10:05	49.38	29.79%
-9	sp.gov.br website analytics sp.gov.br 	Law and Government > Government	-2	00:05:48	6.02	45.60%
-10	meb.gov.tr website analytics meb.gov.tr 	Law and Government > Government	+5	00:08:05	9.87	29.66%
-11	canada.ca website analytics canada.ca 	Law and Government > Government	-1	00:04:41	3.90	37.44%
-12	correios.com.br website analytics correios.com.br 	Law and Government > Government	+2	00:03:05	3.65	26.35%
-13	noticiasconcursos.com.br website analytics noticiasconcursos.com.br 	Law and Government > Government	-4	00:00:02	1.29	4.16%
-14	japanpost.jp website analytics japanpost.jp 	Law and Government > Government	-3	00:02:46	4.15	41.49%
-15	dpboss.net website analytics dpboss.net 	Law and Government > Government	-3	00:00:42	2.35	5.70%
-16	nta.go.jp website analytics nta.go.jp 	Law and Government > Government	-3	00:12:42	24.22	34.45%
-17	mos.ru website analytics mos.ru 	Law and Government > Government	=	00:07:08	8.41	27.05%
-18	europa.eu website analytics europa.eu 	Law and Government > Government	=	00:04:35	3.98	54.26%
-19	anses.gob.ar website analytics anses.gob.ar 	Law and Government > Government	-3	00:04:22	7.63	34.74%
-20	gov.br website analytics gov.br 	Law and Government > Government	+2	00:02:42	2.73	56.52%
-21	acesso.gov.br website analytics acesso.gov.br 	Law and Government > Government	-1	00:05:24	4.79	31.87%
-22	cra-arc.gc.ca website analytics cra-arc.gc.ca 	Law and Government > Government	+4	00:07:50	15.43	10.90%
-23	fazenda.gov.br website analytics fazenda.gov.br 	Law and Government > Government	-2	00:07:12	7.16	28.53%
-24	cowin.gov.in website analytics cowin.gov.in 	Law and Government > Government	new	00:07:11	6.86	31.61%
-25	afip.gob.ar website analytics afip.gob.ar 	Law and Government > Law and Government	-6	00:23:48	20.06	15.69%
-26	ssa.gov website analytics ssa.gov 	Law and Government > Government	-3	00:06:16	8.25	31.65%
-27	nalog.ru website analytics nalog.ru 	Law and Government > Government	-2	00:06:50	8.24	29.46%
-28	sat.gob.mx website analytics sat.gob.mx 	Law and Government > Government	+3	00:12:02	11.11	26.75%
-29	argentina.gob.ar website analytics argentina.gob.ar 	Law and Government > Government	-5	00:02:40	3.61	60.20%
-30	inps.it website analytics inps.it 	Law and Government > Government	=	00:07:30	11.92	20.70%
-31	mg.gov.br website analytics mg.gov.br 	Law and Government > Government	+1	00:06:13	6.31	42.11%
-32	royalmail.com website analytics royalmail.com 	Law and Government > Government	-4	00:02:55	3.31	36.84%
-33	nyc.gov website analytics nyc.gov 	Law and Government > Government	+1	00:04:42	4.60	44.10%
-34	sarkariresult.com website analytics sarkariresult.com 	Law and Government > Government	+1	00:04:18	2.55	36.15%
-35	nsw.gov.au website analytics nsw.gov.au 	Law and Government > Government	+1	00:03:41	4.70	44.34%
-36	mhlw.go.jp website analytics mhlw.go.jp 	Law and Government > Government	-7	00:03:30	3.61	59.45%
-37	wa.gov website analytics wa.gov 	Law and Government > Government	=	00:05:50	7.97	35.88%
-38	jusbrasil.com.br website analytics jusbrasil.com.br 	Law and Government > Legal	=	00:03:50	2.67	60.64%
-39	gob.mx website analytics gob.mx 	Law and Government > Government	-12	00:03:11	2.09	62.12%
-40	uscis.gov website analytics uscis.gov 	Law and Government > Law and Government	+1	00:04:54	4.79	36.18%
-41	rj.gov.br website analytics rj.gov.br 	Law and Government > Government	-2	00:05:13	4.60	44.45%
-42	state.gov website analytics state.gov 	Law and Government > Government	+4	00:07:06	5.63	45.87%
-43	ohio.gov website analytics ohio.gov 	Law and Government > Government	+4	00:05:57	6.84	30.89%
-44	va.gov website analytics va.gov 	Law and Government > National Security	-4	00:04:21	4.96	50.17%
-45	incometaxindiaefiling.gov.in website analytics incometaxindiaefiling.gov.in 	Law and Government > Government	+47	00:10:52	12.41	21.10%
-46	texas.gov website analytics texas.gov 	Law and Government > Government	+5	00:04:07	3.55	48.84%
-47	gov.hu website analytics gov.hu 	Law and Government > Government	+15	00:06:18	7.29	33.93%
-48	consultant.ru website analytics consultant.ru 	Law and Government > Legal	=	00:05:58	3.83	48.17%
-49	juntadeandalucia.es website analytics juntadeandalucia.es 	Law and Government > Law and Government	-7	00:06:25	7.00	35.83%
-50	laposte.fr website analytics laposte.fr 	Law and Government > Government	-5	00:02:58	3.08	60.82%
+ Rank 	Website
+1	irs.gov
+2	service.gov.uk
+3	ca.gov
+4	gosuslugi.ru
+5	gov.uk
+6	turkiye.gov.tr
+7	ny.gov
+8	census.gov.uk
+9	sp.gov.br
+10	meb.gov.tr
+11	canada.ca
+12	correios.com.br
+13	noticiasconcursos.com.br
+14	japanpost.jp
+15	dpboss.net
+16	nta.go.jp
+17	mos.ru website
+18	europa.eu
+19	anses.gob.ar
+20	gov.br
+21	acesso.gov.br
+22	cra-arc.gc.ca
+23	fazenda.gov.br
+24	cowin.gov.in
+25	afip.gob.ar
+26	ssa.gov
+27	nalog.ru
+28	sat.gob.mx
+29	argentina.gob.ar
+30	inps.it
+31	mg.gov.br
+32	royalmail.com
+33	nyc.gov
+34	sarkariresult.com
+35	nsw.gov.au
+36	mhlw.go.jp
+37	wa.gov
+38	jusbrasil.com.br
+39	gob.mx
+40	uscis.gov
+41	rj.gov.br
+42	state.gov
+43	ohio.gov
+44	va.gov
+45	incometaxindiaefiling.gov.in
+46	texas.gov
+47	gov.hu
+48	consultant.ru
+49	juntadeandalucia.es
+50	laposte.fr
