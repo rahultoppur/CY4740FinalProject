@@ -1,5 +1,3 @@
-Computer Electronics and Technology > Computer Security
-Rank 	Website
 1	360.cn
 2	cloudflare.com
 3	mcafee.com

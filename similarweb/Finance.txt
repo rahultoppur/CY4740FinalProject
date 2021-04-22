@@ -1,5 +1,3 @@
-Finance
-Rank 	Website
 1	paypal.com
 2	chase.com
 3	intuit.com

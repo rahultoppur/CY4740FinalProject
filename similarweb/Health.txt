@@ -1,5 +1,3 @@
-Health
-Rank 	Website
 1	healthline.com
 2	nih.gov
 3	cvs.com
