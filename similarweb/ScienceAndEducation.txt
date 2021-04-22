@@ -1,0 +1,52 @@
+Science and Education
+ Rank 	Website 	Category 	Change 	Avg. Visit Duration 	Pages / Visit 	Bounce Rate 
+1	accuweather.com website analytics accuweather.com 	Science and Education > Weather	=	00:00:57	2.23	36.44%
+2	weather.com website analytics weather.com 	Science and Education > Weather	=	00:00:54	1.79	38.54%
+3	brainly.co.id website analytics brainly.co.id 	Science and Education > Education	=	00:10:04	6.90	39.16%
+4	blackboard.com website analytics blackboard.com 	Science and Education > Education	=	00:08:34	8.36	17.10%
+5	quizizz.com website analytics quizizz.com 	Science and Education > Education	+1	00:06:33	5.65	29.11%
+6	quizlet.com website analytics quizlet.com 	Science and Education > Education	-1	00:07:30	4.41	43.18%
+7	schoology.com website analytics schoology.com 	Science and Education > Education	=	00:13:26	8.65	17.92%
+8	eba.gov.tr website analytics eba.gov.tr 	Science and Education > Education	+5	00:08:29	7.47	25.44%
+9	gismeteo.ru website analytics gismeteo.ru 	Science and Education > Weather	-1	00:02:28	2.68	42.44%
+10	goodreads.com website analytics goodreads.com 	Science and Education > Libraries and Museums	=	00:04:09	4.10	54.30%
+11	researchgate.net website analytics researchgate.net 	Science and Education > Science and Education	=	00:02:57	2.53	56.87%
+12	udemy.com website analytics udemy.com 	Science and Education > Education	=	00:11:05	6.58	34.58%
+13	librus.pl website analytics librus.pl 	Science and Education > Education	+1	00:06:54	10.58	9.83%
+14	clever.com website analytics clever.com 	Science and Education > Education	-5	00:04:10	3.54	30.74%
+15	brainly.com.br website analytics brainly.com.br 	Science and Education > Education	+22	00:08:01	4.52	53.28%
+16	brainly.lat website analytics brainly.lat 	Science and Education > Education	+3	00:06:12	3.82	56.06%
+17	archive.org website analytics archive.org 	Science and Education > Science and Education	-2	00:05:12	7.41	49.60%
+18	duolingo.com website analytics duolingo.com 	Science and Education > Education	-1	00:12:55	7.37	31.08%
+19	seesaw.me website analytics seesaw.me 	Science and Education > Education	-3	00:10:04	8.17	20.64%
+20	mheducation.com website analytics mheducation.com 	Science and Education > Education	-2	00:14:19	24.78	16.71%
+21	chegg.com website analytics chegg.com 	Science and Education > Education	-1	00:11:33	6.90	33.81%
+22	bbcollab.com website analytics bbcollab.com 	Science and Education > Education	+6	00:02:59	2.60	52.37%
+23	cambridge.org website analytics cambridge.org 	Science and Education > Universities and Colleges	=	00:04:49	3.47	58.28%
+24	khanacademy.org website analytics khanacademy.org 	Science and Education > Education	-3	00:07:25	4.84	51.36%
+25	getepic.com website analytics getepic.com 	Science and Education > Education	-3	00:12:43	11.41	19.74%
+26	mit.edu website analytics mit.edu 	Science and Education > Universities and Colleges	-1	00:09:09	8.18	39.43%
+27	brainly.in website analytics brainly.in 	Science and Education > Education	+2	00:05:02	2.52	60.58%
+28	scribd.com website analytics scribd.com 	Science and Education > Education	+2	00:02:48	2.54	66.40%
+29	grammarly.com website analytics grammarly.com 	Science and Education > Education	+2	00:02:29	2.99	41.04%
+30	uchi.ru website analytics uchi.ru 	Science and Education > Education	-3	00:17:42	21.62	19.84%
+31	coursera.org website analytics coursera.org 	Science and Education > Education	+1	00:11:09	8.36	34.64%
+32	yt1s.com website analytics yt1s.com 	Science and Education > Education	+15	00:04:48	3.97	39.55%
+33	weather.yahoo.co.jp website analytics weather.yahoo.co.jp 	Science and Education > Weather	+6	00:01:29	1.68	61.51%
+34	weather.gov website analytics weather.gov 	Science and Education > Weather	-10	00:02:46	3.47	45.06%
+35	gdz.ru website analytics gdz.ru 	Science and Education > Education	-9	00:06:14	4.25	25.84%
+36	wordwall.net website analytics wordwall.net 	Science and Education > Education	+9	00:03:43	3.67	49.95%
+37	padlet.com website analytics padlet.com 	Science and Education > Education	+1	00:03:04	2.42	62.16%
+38	liveworksheets.com website analytics liveworksheets.com 	Science and Education > Education	+11	00:07:28	5.56	45.26%
+39	pearson.com website analytics pearson.com 	Science and Education > Education	-4	00:05:51	5.85	39.53%
+40	bom.gov.au website analytics bom.gov.au 	Science and Education > Weather	+3	00:15:55	5.66	48.49%
+41	coursehero.com website analytics coursehero.com 	Science and Education > Education	+5	00:04:01	3.37	56.99%
+42	ilmeteo.it website analytics ilmeteo.it 	Science and Education > Weather	-6	00:05:35	3.19	39.67%
+43	timeanddate.com website analytics timeanddate.com 	Science and Education > Astronomy	+7	00:01:32	2.56	65.66%
+44	harvard.edu website analytics harvard.edu 	Science and Education > Universities and Colleges	=	00:02:46	2.75	66.40%
+45	index-education.net website analytics index-education.net 	Science and Education > Education	+34	00:02:55	2.50	55.33%
+46	toppr.com website analytics toppr.com 	Science and Education > Education	-6	00:03:18	2.81	67.43%
+47	sinoptik.ua website analytics sinoptik.ua 	Science and Education > Weather	-14	00:01:09	1.90	66.35%
+48	unam.mx website analytics unam.mx 	Science and Education > Education	-6	00:04:50	4.30	54.86%
+49	analyticsapp.ru website analytics analyticsapp.ru 	Science and Education > Education	+37	00:00:29	3.17	28.92%
+50	brainly.com website analytics brainly.com 	Science and Education > Education	+1	00:08:26	6.45	44.14%
