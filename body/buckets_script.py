@@ -5,7 +5,7 @@ import subprocess, threading, sys, csv
 from subprocess import Popen, PIPE
 #obj = Tranco(cache=False, cache_dir='.tranco')
 num_entries = 10#int(sys.argv[1])
-num_entries_per_piece = 16666#int(sys.argv[2])
+num_entries_per_piece = 932#int(sys.argv[2])
 lock = threading.Lock()
 #latest_date = date.today().strftime("%Y-%m-%d")
 #latest_date = '2021-04-07'
@@ -13,7 +13,7 @@ lock = threading.Lock()
 latest_list_pieces = []
 #split list into chunks, write to input files
 #FIXME: CHANGE THE FILE INPUT HERE
-data = open('../tranco_maggie_2.csv', 'r')
+data = open('negatives_emily.csv', 'r')
 latest_list = list(csv.reader(data))
 
 count = 0
