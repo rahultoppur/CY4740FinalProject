@@ -1,5 +1,3 @@
-News And Media
- Rank 	Website
 1	yahoo.com
 2	yahoo.co.jp
 3	naver.com
